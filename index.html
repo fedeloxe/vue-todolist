@@ -24,7 +24,7 @@
                     <div class="col-12">
                         <ul class="list-unstyled">
                             <li class="list-item d-flex align-items-center mt-2" v-for="(item, index) in toDoList">
-                                <div :class="item.done ? 'text-decoration-line-through' :''">
+                                <div :class="item.done ? 'text-decoration-line-through' :''" @click="checkTask(index)">
                                     {{index + 1}} - {{item.text}}
                                 </div>
                                 <button type="button" class="btn btn-danger ms-4" @click="removeTask"><i class="fa-solid fa-xmark"></i></button>

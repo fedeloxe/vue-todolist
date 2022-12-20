@@ -50,6 +50,8 @@ createApp({
             else{
                 task.done= true;
             }
+
         }
+        
     },
 }).mount('#app')
